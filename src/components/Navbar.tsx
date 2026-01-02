@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from './ThemeToggle';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -44,7 +45,7 @@ export const Navbar = () => {
             e.preventDefault();
             handleNavClick('#home');
           }}
-          className="font-display text-2xl font-bold gradient-text"
+          className="font-display text-2xl font-bold gradient-text hover-scale"
         >
           DP
         </a>
@@ -59,14 +60,16 @@ export const Navbar = () => {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-body text-sm tracking-wide"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-body text-sm tracking-wide link-underline"
             >
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
           <Button
             variant="gradient"
             size="sm"
+            className="hover-lift"
             onClick={() => handleNavClick('#contact')}
           >
             Let's Talk
@@ -74,13 +77,16 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-foreground p-2"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <ThemeToggle />
+          <button
+            className="text-foreground p-2 neumorphic rounded-lg"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
@@ -98,7 +104,7 @@ export const Navbar = () => {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-body py-2"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-body py-2 hover:translate-x-2"
             >
               {link.label}
             </a>
