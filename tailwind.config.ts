@@ -64,6 +64,10 @@ export default {
           bg: "hsl(var(--glass-bg))",
           border: "hsl(var(--glass-border))",
         },
+        neu: {
+          light: "hsl(var(--neu-light))",
+          dark: "hsl(var(--neu-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
