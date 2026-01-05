@@ -15,8 +15,8 @@ const projects = [
     role: 'UI/UX Designer & Frontend Developer',
     problem: 'Manual inventory handling causes errors, stock discrepancies, and poor organization leading to business inefficiencies.',
     solution: 'Designed a clean, structured system with readable layouts, intuitive data flow, and real-time inventory tracking.',
-    features: ['Inventory record management', 'Clean dashboard & tables', 'CRUD operations', 'User-friendly interface'],
-    tools: ['Figma', 'HTML', 'CSS', 'PHP', 'MySQL'],
+    features: ['Inventory record management', 'Clean dashboard & tables', 'CRUD operations', 'User-friendly interface', 'Invoice Forecasting'],
+    tools: ['HTML', 'CSS', 'PHP', 'MySQL'],
     gradient: 'from-violet-500 via-purple-500 to-indigo-500',
     bgGradient: 'from-violet-500/10 via-purple-500/5 to-transparent',
     caseStudy: {
@@ -70,7 +70,7 @@ const projects = [
     problem: 'Brands need compelling visuals to stand out in crowded markets and capture attention in milliseconds.',
     solution: 'Crafted eye-catching marketing materials with strategic visual hierarchy and brand-consistent design language.',
     features: ['Product flyers', 'Social media graphics', 'Brand consistency', 'Print-ready designs'],
-    tools: ['Canva', 'Adobe Photoshop'],
+    tools: ['Canva'],
     gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
     bgGradient: 'from-emerald-500/10 via-teal-500/5 to-transparent',
     caseStudy: {
