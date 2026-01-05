@@ -39,6 +39,12 @@ const skillCategories = [
     color: 'from-emerald-500 to-teal-600',
     skills: ['Design Systems (Basics)', 'Accessibility (Basics)', 'Responsive Design'],
   },
+  {
+    title: 'Soft Skills',
+    icon: Share2,
+    color: 'from-amber-500 to-orange-600',
+    skills: ['Team Leadership', 'Management & Coordination', 'Decision-making', 'Communication', 'Time Management'],
+  },
 ];
 
 const toolIcons: Record<string, React.ElementType> = {
