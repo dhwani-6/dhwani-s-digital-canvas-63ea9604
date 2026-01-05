@@ -6,14 +6,14 @@ const contactLinks = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'dhwani.pandya@email.com',
-    href: 'mailto:dhwani.pandya@email.com',
+    value: 'dhwani6p@gmail.com',
+    href: 'mailto:dhwani6p@gmail.com',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/dhwanipandya',
-    href: 'https://linkedin.com/in/dhwanipandya',
+    value: 'linkedin.com/in/dhwani-pandya',
+    href: 'https://www.linkedin.com/in/dhwani-pandya-150188341',
   },
   {
     icon: Globe,
